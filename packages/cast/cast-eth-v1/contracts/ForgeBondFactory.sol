@@ -1,14 +1,17 @@
 pragma solidity 0.8.0;
 pragma experimental ABIEncoderV2;
 
-import "./AbstractInstrumentFactory.sol";
+
+/** this will work as bank, issuing the bonds based on  */
+
+import "./ForgeBond.sol";
 import "./tokens/ForgeBond.sol";
 import "./ForgeInstrumentRegistry.sol";
 
-contract ForgeBondFactory is AbstractInstrumentFactory {
-    constructor(address owner) public AbstractInstrumentFactory(owner) {}
+contract ForgeBondFactory is ForgeBond {
+    constructor(address owner) public ForgeBond(owner) {}
 
-    function createForgeBond(
+    function issueForgeBond(
         address registryAddress,
         BasicTokenLibrary.BasicTokenInput memory basicTokenInput
     ) public onlyOwner returns (address) {

@@ -14,7 +14,7 @@
 <title>0</title>
 <polygon fill="#f2f2f2" stroke="#000000" points="420.1903,-726.1177 420.1903,-934.9177 758.8413,-934.9177 758.8413,-726.1177 420.1903,-726.1177"/>
 <text text-anchor="middle" x="589.5158" y="-918.3177" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;&lt;Abstract&gt;&gt;</text>
-<text text-anchor="middle" x="589.5158" y="-901.5177" font-family="Times,serif" font-size="14.00" fill="#000000">AbstractInstrumentFactory</text>
+<text text-anchor="middle" x="589.5158" y="-901.5177" font-family="Times,serif" font-size="14.00" fill="#000000">ForgeBond</text>
 <polyline fill="none" stroke="#000000" points="420.1903,-893.3177 758.8413,-893.3177 "/>
 <text text-anchor="start" x="428.1903" y="-876.7177" font-family="Times,serif" font-size="14.00" fill="#000000">Private:</text>
 <text text-anchor="start" x="428.1903" y="-859.9177" font-family="Times,serif" font-size="14.00" fill="#000000"> &#160;&#160;owner: address</text>

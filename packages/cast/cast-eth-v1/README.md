@@ -1,5 +1,6 @@
-ForgeTokenFactory deployment on Infura:
-npm run init -- --network-folder ../../../../networks/testnet/
+## ForgeTokenFactory deployment on Infura:
+
+> npm run init -- --network-folder ../../../../networks/testnet/
 
 You can access to the ForgeTokenFactory address at the contract address
 field identified at the end of the deployment

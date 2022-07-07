@@ -3,6 +3,8 @@ pragma solidity 0.8.0;
 import "./SecurityTokenBalancesLibrary.sol";
 
 library BasicTokenLibrary {
+   /** we will consider this as underlying DebondToken information. 
+   */
     struct BasicToken {
         address owner;
         uint256 initialSupply;
@@ -36,7 +38,9 @@ library BasicTokenLibrary {
         address settler;
         address owner;
     }
-
+    /** we
+    this will be replaced 
+    */
     struct Bond {
         uint256 denomination;
         uint256 divisor;

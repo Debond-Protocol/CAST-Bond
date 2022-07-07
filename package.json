@@ -50,6 +50,7 @@
     "dd-trace": "^1.5.1",
     "delay": "^5.0.0",
     "env-cmd": "^10.1.0",
+    "erc-3475": "git+https://github.com/Debond-Protocol/EIP-3475.git",
     "esm": "3.2.25",
     "eth-sig-util": "^3.0.1",
     "ethereumjs-util": "^7.1.3",

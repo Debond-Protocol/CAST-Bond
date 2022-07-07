@@ -1,12 +1,12 @@
 pragma solidity 0.8.0;
 
-import "./AbstractInstrumentFactory.sol";
+import "./ForgeBond.sol";
 import "./interfaces/ITokenRegistry.sol";
 import "./tokens/ForgeBond.sol";
 import "./ForgeInstrumentRegistry.sol";
 
-contract ForgeStructuredProductFactory is AbstractInstrumentFactory {
-    constructor(address owner) public AbstractInstrumentFactory(owner) {}
+contract ForgeStructuredProductFactory is ForgeBond {
+    constructor(address owner) public ForgeBond(owner) {}
 
     function createStructuredProduct()
         public
