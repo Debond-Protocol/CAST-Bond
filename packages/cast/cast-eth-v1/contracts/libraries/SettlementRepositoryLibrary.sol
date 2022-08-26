@@ -5,6 +5,8 @@ import "../interfaces/IOperatorManager.sol";
 import "./SecurityTokenBalancesLibrary.sol";
 import "./BasicTokenLibrary.sol";
 
+import "./transactionTypes.sol";
+
 library SettlementRepositoryLibrary {
     using SecurityTokenBalancesLibrary for SecurityTokenBalancesLibrary.SecurityTokenBalances;
     using SettlementRepositoryLibrary for SettlementRepositoryLibrary.SettlementTransactionRepository;
@@ -17,30 +19,6 @@ library SettlementRepositoryLibrary {
     uint256 public constant CASH_TRANSFERRED = 0x04;
     uint256 public constant CANCELLED = 0x05;
     uint256 private constant ERROR = 0xFF;
-
-    struct SettlementTransactionRepository {
-        mapping(uint256 => SettlementTransaction) settlementTransactionById; // mapping ( settlementtransactionId => settlementtransaction)
-        mapping(uint256 => uint256) operationTypeByOperationId; // operationId -> operationType
-    }
-
-    struct SettlementTransaction {
-        uint256 txId;
-        uint256 operationId;
-        address deliverySenderAccountNumber;
-        address deliveryReceiverAccountNumber;
-        uint256 deliveryQuantity;
-        uint256 status;
-        string txHash;
-    }
-
-    struct PartialSettlementTransaction {
-        uint256 txId;
-        uint256 operationId;
-        address deliverySenderAccountNumber; // redemption investor - subscription issuer
-        address deliveryReceiverAccountNumber; // redemption issuer - subscription investor
-        uint256 deliveryQuantity;
-        string txHash;
-    }
 
     function getSettlementTransactionById(
         SettlementTransactionRepository storage settlementTransactionRepository,

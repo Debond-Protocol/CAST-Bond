@@ -45,8 +45,8 @@ library BasicTokenLibrary {
         uint256 denomination;
         uint256 divisor;
         uint256 startDate;
-        uint256 maturityDate;
-        uint256 currentMaturityDate;
+        uint256 maturityDate; // the initial date (fixed for fixed rate bond).
+        uint256 currentMaturityDate; // for the floating rate bonds, the predicted value based on the redemption conditions defined
         uint256 firstCouponDate;
         uint256 couponFrequencyInMonths;
         uint256 interestRateInBips;
